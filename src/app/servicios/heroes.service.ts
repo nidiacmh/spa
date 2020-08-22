@@ -68,7 +68,6 @@ export class HeroesService {
   }
 
   buscarHeroes(termino:string){
-
     let heroesArr:Heroe[]=[];
     termino = termino.toLowerCase();
     for(let heroe of this.heroes){
@@ -77,7 +76,7 @@ export class HeroesService {
         heroesArr.push(heroe)
       }
     }
-
+    return heroesArr;
   }
 }
 
